@@ -31,7 +31,7 @@ public:
     int getPSstate();
     void calcTotalBurst();
     void setFirstAT(int time);
-    void setLastTime(int time);
+    void setLastAT(int time);
     string getName();
     int getData(int i);
     void set(int i, int value);
@@ -40,7 +40,7 @@ public:
     int processSize();
     int getTotalBurst();
     int getFirstAT();
-    int getLastTime();
+    int getLastTAT();
     int setPriorityQueue(int queue);
     
 private:
@@ -50,7 +50,7 @@ private:
     int PSstate = 0;
     int totalBurst;
     int firstAT;
-    int lastTime = 0;
+    int lastAT = 0;
     int priorityQueue = 1;
     
     
