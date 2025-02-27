@@ -1,0 +1,17 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore build artifacts and temporary files
+*.o
+*.out
+*.dSYM/
+*.dSYM/**
+
+# Ignore other temporary files
+*.tmp
+*.log
+*.swp
+*.swo
+
+# Ignore Visual Studio Code settings
+.vscode/
