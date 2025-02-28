@@ -1,5 +1,5 @@
 # 🚀 CPU-scheduler
-An RTOS simulation of FCFS, and MLFQ scheduling.
+An RTOS simulation of FCFS, SJF, and MLFQ scheduling.
 
 The results of this experiment prove that MLFQ is better than FCFS in terms of CPU utilization, waiting time, turnaround time, and response time. MLFQ has significantly better performance than FCFS. 🎉
 
@@ -67,30 +67,22 @@ To debug C++ code in Visual Studio Code, ensure you have the following prerequis
      }
      ```
 
-
-
 ## 📊 FCFS RESULTS
+
 ```bash
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Completed Processes: P0 P1 P2 P4 P5 P6 P7 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Current Execution Time: 645
-
-Next process on the CPU: P3
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Ready queue:
-   Process     Burst
-   [empty]       N/A
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Completed Processes: P0 P1 P2 P3 P4 P5 P6 P7 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-total time to complete all processes: 648
-CPU Utilization: 85.34%
+```
 
+### ⏱️ Total Time & CPU Utilization
+
+- **Total Time to Complete All Processes:** 648
+- **CPU Utilization:** 85.34% 💪
+
+### ⏳ Waiting Time
+
+```bash
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$
 Waiting Time:
@@ -103,7 +95,11 @@ P5, Waiting Time: 230
 P6, Waiting Time: 184
 P7, Waiting Time: 184
 Average Waiting Time: 185.25
+```
 
+### 🔄 Turnaround Time
+
+```bash
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 Turnaround Time: 
@@ -116,6 +112,11 @@ P5, Turnaround Time: 445
 P6, Turnaround Time: 512
 P7, Turnaround Time: 493
 Average Turnaround Time: 521.38
+```
+
+### 🕰️ Response Time
+
+```bash
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -132,14 +133,21 @@ Average Response Time: 24.38
 ```
 
 ## 📈 MLFQ RESULTS
+
 ```bash
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Completed Processes: 
+Completed Processes: P0 P1 P2 P3 P4 P5 P6 P7 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-total time to complete all processes: 82
-CPU Utilization: 100.00%
+```
 
+### ⏱️ Total Time & CPU Utilization
+
+- **Total Time to Complete All Processes:** 82
+- **CPU Utilization:** 100.00% 💪
+
+### ⏳ Waiting Time
+
+```bash
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$
 Waiting Time:
@@ -152,6 +160,11 @@ P5, Waiting Time: 39
 P6, Waiting Time: 45
 P7, Waiting Time: 50
 Average Waiting Time: 35.88
+```
+
+### 🔄 Turnaround Time
+
+```bash
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -165,6 +178,11 @@ P5, Turnaround Time: 249
 P6, Turnaround Time: 368
 P7, Turnaround Time: 359
 Average Turnaround Time: 368.25
+```
+
+### 🕰️ Response Time
+
+```bash
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
