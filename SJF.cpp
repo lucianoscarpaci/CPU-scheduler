@@ -146,7 +146,7 @@ void start_sjf(vector<vector<int>> process_p, priority_queue<om, vector<om>, gre
         int total_waiting_time = 0;
 
         for(int i=0; i < process_p.size(); i++){
-            cout << "P" + to_string(i+1) << ", Waiting Time: "<<waiting_time[i]<<endl;
+            cout << "P" + to_string(i) << ", Waiting Time: "<<waiting_time[i]<<endl;
             total_waiting_time += waiting_time[i];
         }
 
@@ -158,7 +158,7 @@ void start_sjf(vector<vector<int>> process_p, priority_queue<om, vector<om>, gre
         /* turnaround time, total turn around time, average turn around time */
         int total_turnaround_time = 0;
         for (int i=0; i < process_p.size(); i++) {
-            cout << "P" + to_string(i+1) << ", Turnaround Time: "<<turn_around_time[i]<<endl;
+            cout << "P" + to_string(i) << ", Turnaround Time: "<<turn_around_time[i]<<endl;
             total_turnaround_time += turn_around_time[i];
         }
         cout << "Average Turnaround Time: "<<fixed<<setprecision(2)<<(double)total_turnaround_time/process_p.size()<<endl<<endl;
@@ -169,7 +169,7 @@ void start_sjf(vector<vector<int>> process_p, priority_queue<om, vector<om>, gre
         cout << YELLOW << "Response Time"<<endl;
         int total_response_time = 0;
         for(int i=0; i < process_p.size(); i++){
-            cout << "P" + to_string(i+1) << ", Response Time: "<<response_time[i]<<endl;
+            cout << "P" + to_string(i) << ", Response Time: "<<response_time[i]<<endl;
             total_response_time += response_time[i];
         }
         cout<< YELLOW << "Average Response Time: "<<fixed<<setprecision(2)<<(double)total_response_time/process_p.size()<<endl;
