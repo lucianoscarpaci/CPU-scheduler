@@ -197,5 +197,6 @@ P6, Response Time: 27
 P7, Response Time: 32
 Average Response Time: 15.75
 ```
-# License
-This project is licensed under the Apache License 2.0.
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
